@@ -125,10 +125,10 @@ function findUser(id: number): Either<Failure, User> {
  * This works very similar to `flatMap` on an array.
  */
 const lookupUser: Either<Failure, string> = pipe(
-  "1",
+  // "1",
   // "asdf",
   // "123",
-  parseIntSafe,
+  parseIntSafe("1"),
   // Use chain to "flatten" the nested Either...
   chain(findUser),
   map(x => `Found user ${x.id} in our list!`)
@@ -146,9 +146,9 @@ console.log("--------------------------------------------------");
  * and a function for the success side.
  * These both return the same type and get us to a value of that type.
  */
-const user: string = pipe(
+const user = pipe(
   "2",
-  //   "asdf",
+  // "asdf",
   //   "123",
   parseIntSafe,
   chain(findUser),

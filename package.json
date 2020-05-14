@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "npx tsc",
-    "start": "npm run compile && node build/either.js"
+    "start": "npm run compile && node build/combining-options.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "@types/node": "^12.12.14",
     "fp-ts": "^2.2.0",
     "lodash": "^4.6.0",
+    "monocle-ts": "^2.1.0",
     "typescript": "^3.7.2"
   }
 }
