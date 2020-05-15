@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "npx tsc",
-    "start": "npm run compile && node build/combining-options.js"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,12 @@
     "fp-ts": "^2.2.0",
     "lodash": "^4.6.0",
     "monocle-ts": "^2.1.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.9.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0"
   }
 }
